@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <h1><a href="#">Aura</a></h1>
+        <ul>
+            <li><a href="#features" data-i18n="nav-features">Features</a></li>
+            <li><a href="#about" data-i18n="nav-about">About</a></li>
+            <li><a href="#premium" data-i18n="nav-premium">Premium</a></li>
+            <li><a href="#reviews" data-i18n="nav-reviews">Reviews</a></li>
+            <li class="nav-actions">
+                <div class="lang-select">
+                    <label for="lang-switch" class="sr-only">Language</label>
+                    <select id="lang-switch" aria-label="Language selector">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="uz">UZ</option>
+                    </select>
+                </div>
+            </li>
+        </ul>
+
+        <button class="n-btn" data-i18n="btn-get-started">Get Started</button>
+    </nav>
+
+    <section class="section1">
+        <div class="container home-wrapper">
+            <div class="s1-left">
+                <p class="p" data-i18n="hero-heading-1">Immerse in sound.</p>
+                <p class="p1" data-i18n="hero-heading-2">Without limits.</p>
+                <p class="p2" data-i18n="hero-copy">Experience studio-quality fidelity, personalized curation, and seamless playback across
+                    all your devices. The future of listening is here.</p>
+                <div class="btns">
+                    <button class="s1-btn" data-i18n="btn-trial">Start free trial</button>
+                    <button class="s2-btn">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <span data-i18n="btn-demo">Listen to demo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="player">
+                <div class="img"></div>
+                <div class="info-row">
+                    <div class="info-copy">
+                        <p class="p4">Midnight City Skyline</p>
+                        <p class="p5">By: The Midnight</p>
+                    </div>
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                </div>
+                <div class="btns1">
+                    <button class="next">⏮️</button>
+                    <button class="play"><i class="fa-regular fa-circle-play"></i></button>
+                    <button class="next">⏭️</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section2">
+        <div class="container texts1">
+            <h1 class="h1" data-i18n="features-heading">Designed for audiophiles.</h1>
+            <p class="p6" data-i18n="features-copy">We've engineered every detail to deliver an unparalleled listening experience, from lossless
+                compression to intelligent curation.</p>
+        </div>
+        <div class="container divs">
+            <div class="feature wrapper">
+                <div class="feature-icon">01</div>
+                <h2 class="h2" data-i18n="feature-1-title">Lossless Quality</h2>
+                <p class="p7" data-i18n="feature-1-copy">Stream up to 24-bit/192kHz audio. Hear every breath, every string, exactly as the artist
+                    intended.</p>
+            </div>
+            <div class="feature wrapper">
+                <div class="feature-icon">02</div>
+                <h2 class="h2" data-i18n="feature-2-title">Smart Curation</h2>
+                <p class="p7" data-i18n="feature-2-copy">Our AI analyzes your listening habits to generate endless mixes that perfectly match your
+                    current mood.</p>
+            </div>
+            <div class="feature wrapper">
+                <div class="feature-icon">03</div>
+                <h2 class="h2" data-i18n="feature-3-title">Seamless Sync</h2>
+                <p class="p7" data-i18n="feature-3-copy">Start on your phone, continue on your desktop. Perfect synchronization across your entire
+                    ecosystem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section3">
+        <div class="container about">
+            <div class="frame">
+                <div class="badge">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="badge-text">
+                        <span class="title">Over 100M Tracks</span>
+                        <span class="subtitle">Available globally</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h1 class="a-t" data-i18n="about-heading">Curated by experts. Driven by passion.</h1>
+                <p class="a-t1" data-i18n="about-copy">We built Aura because we believe music shouldn't be compressed into lifeless files. We
+                    collaborate directly with artists and sound engineers to deliver a platform that respects the art of
+                    sound.</p>
+                <div class="li">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p class="a-t2" data-i18n="about-bullet-1">Direct-to-artist revenue model ensures fair compensation.</p>
+                </div>
+                <div class="li">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p class="a-t2" data-i18n="about-bullet-2">Exclusive live sessions and behind-the-scenes content.</p>
+                </div>
+                <div class="li">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p class="a-t2" data-i18n="about-bullet-3">Zero ad interruptions, even on the base tier.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium" class="section4">
+        <div class="container">
+            <div class="texts2">
+                <h1 class="h3" data-i18n="premium-heading">Premium benefits</h1>
+                <p class="p8" data-i18n="premium-copy">Unlock the full potential of your audio setup.</p>
+            </div>
+            <div class="musics">
+                <article class="music">
+                    <span class="music-index">01</span>
+                    <span class="music-badge"></span>
+                    <div class="music-copy">
+                        <h2 class="music-title" data-i18n="premium-1-title">High-Res Lossless</h2>
+                        <p class="music-desc" data-i18n="premium-1-copy">Up to 24-bit/192kHz audio resolution.</p>
+                    </div>
+                    <span class="music-status" data-i18n="included">Included</span>
+                    <span class="music-more">•••</span>
+                </article>
+                <article class="music active">
+                    <span class="music-index">02</span>
+                    <span class="music-badge badge-purple"></span>
+                    <div class="music-copy">
+                        <h2 class="music-title" data-i18n="premium-2-title">Spatial Audio</h2>
+                        <p class="music-desc" data-i18n="premium-2-copy">Immersive 3D soundscapes with Dolby Atmos.</p>
+                    </div>
+                    <span class="music-status" data-i18n="included">Included</span>
+                    <span class="music-more">•••</span>
+                </article>
+                <article class="music">
+                    <span class="music-index">03</span>
+                    <span class="music-badge badge-blue"></span>
+                    <div class="music-copy">
+                        <h2 class="music-title" data-i18n="premium-3-title">Offline Mode</h2>
+                        <p class="music-desc" data-i18n="premium-3-copy">Download your entire library for offline listening.</p>
+                    </div>
+                    <span class="music-status" data-i18n="included">Included</span>
+                    <span class="music-more">•••</span>
+                </article>
+                <article class="music">
+                    <span class="music-index">04</span>
+                    <span class="music-badge badge-dark"></span>
+                    <div class="music-copy">
+                        <h2 class="music-title" data-i18n="premium-4-title">Exclusive Podcasts</h2>
+                        <p class="music-desc" data-i18n="premium-4-copy">Ad-free access to creator originals.</p>
+                    </div>
+                    <span class="music-status" data-i18n="included">Included</span>
+                    <span class="music-more">•••</span>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section5">
+        <div class="container1">
+            <h1 data-i18n="reviews-heading">Hear it from them</h1>
+
+            <div class="divs1">
+                <div class="reviews">
+                    ⭐⭐⭐⭐⭐
+                    <i class="review-text" data-i18n="review-1">"I've tried every music app out there, but Aura's spatial audio integration
+                        makes me feel like
+                        I'm sitting right in the studio."</i>
+                    <div class="profile">
+                        <p class="name">Sarah <span>jekins</span></p>
+                        <p class="who">Audio <span>Engineer</span></p>
+                    </div>
+                </div>
+                <div class="reviews">
+                    ⭐⭐⭐⭐⭐
+                    <i class="review-text" data-i18n="review-2">"The minimalist UI is a breath of fresh air. It gets out of the way and just
+                        lets the music take
+                        center stage."</i>
+                    <div class="profile">
+                        <p class="name">Sarah <span>jekins</span></p>
+                        <p class="who">Audio <span>Engineer</span></p>
+                    </div>
+                </div>
+                <div class="reviews">
+                    ⭐⭐⭐⭐⭐
+                    <i class="review-text" data-i18n="review-3">"Smart curation actually works. For the first time, a platform recommends
+                        indie bands I actually end up loving."</i>
+                    <div class="profile">
+                        <p class="name">Sarah <span>jekins</span></p>
+                        <p class="who">Audio <span>Engineer</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section6">
+        <div class="container2">
+            <h1 class="h4" data-i18n="cta-heading">Ready to elevate your ears?</h1>
+            <p class="p6" data-i18n="cta-copy">Join thousands of audiophiles. Try Premium free for 1 month. <br> Cancel anytime.</p>
+            <button class="cta-btn" data-i18n="cta-button">Get 1 Month Free</button>
+            <p class="terms" data-i18n="terms-copy">Terms and conditions apply.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <h2 class="footer-logo">AURA</h2>
+                <p class="footer-desc" data-i18n="footer-desc">The high-fidelity platform for those who live and breathe sound.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title" data-i18n="footer-product">Product</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer-product-link-1">Premium</a></li>
+                    <li><a href="#" data-i18n="footer-product-link-2">Spatial Audio</a></li>
+                    <li><a href="#" data-i18n="footer-product-link-3">Download App</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title" data-i18n="footer-company">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer-company-link-1">About Us</a></li>
+                    <li><a href="#" data-i18n="footer-company-link-2">Careers</a></li>
+                    <li><a href="#" data-i18n="footer-company-link-3">For Artists</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title" data-i18n="footer-support">Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer-support-link-1">Help Center</a></li>
+                    <li><a href="#" data-i18n="footer-support-link-2">Terms of Service</a></li>
+                    <li><a href="#" data-i18n="footer-support-link-3">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 Aura Audio Inc. All rights reserved.</p>
+            <div class="footer-right">
+                <span class="status"><span class="status-dot"></span> System operational</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                'nav-features': 'Features',
+                'nav-about': 'About',
+                'nav-premium': 'Premium',
+                'nav-reviews': 'Reviews',
+                'btn-get-started': 'Get Started',
+                'hero-heading-1': 'Immerse in sound.',
+                'hero-heading-2': 'Without limits.',
+                'hero-copy': 'Experience studio-quality fidelity, personalized curation, and seamless playback across all your devices. The future of listening is here.',
+                'btn-trial': 'Start free trial',
+                'btn-demo': 'Listen to demo',
+                'features-heading': 'Designed for audiophiles.',
+                'features-copy': 'We\'ve engineered every detail to deliver an unparalleled listening experience, from lossless compression to intelligent curation.',
+                'feature-1-title': 'Lossless Quality',
+                'feature-1-copy': 'Stream up to 24-bit/192kHz audio. Hear every breath, every string, exactly as the artist intended.',
+                'feature-2-title': 'Smart Curation',
+                'feature-2-copy': 'Our AI analyzes your listening habits to generate endless mixes that perfectly match your current mood.',
+                'feature-3-title': 'Seamless Sync',
+                'feature-3-copy': 'Start on your phone, continue on your desktop. Perfect synchronization across your entire ecosystem.',
+                'about-heading': 'Curated by experts. Driven by passion.',
+                'about-copy': 'We built Aura because we believe music shouldn\'t be compressed into lifeless files. We collaborate directly with artists and sound engineers to deliver a platform that respects the art of sound.',
+                'about-bullet-1': 'Direct-to-artist revenue model ensures fair compensation.',
+                'about-bullet-2': 'Exclusive live sessions and behind-the-scenes content.',
+                'about-bullet-3': 'Zero ad interruptions, even on the base tier.',
+                'premium-heading': 'Premium benefits',
+                'premium-copy': 'Unlock the full potential of your audio setup.',
+                'premium-1-title': 'High-Res Lossless',
+                'premium-1-copy': 'Up to 24-bit/192kHz audio resolution.',
+                'included': 'Included',
+                'premium-2-title': 'Spatial Audio',
+                'premium-2-copy': 'Immersive 3D soundscapes with Dolby Atmos.',
+                'premium-3-title': 'Offline Mode',
+                'premium-3-copy': 'Download your entire library for offline listening.',
+                'premium-4-title': 'Exclusive Podcasts',
+                'premium-4-copy': 'Ad-free access to creator originals.',
+                'reviews-heading': 'Hear it from them',
+                'review-1': '"I\'ve tried every music app out there, but Aura\'s spatial audio integration makes me feel like I\'m sitting right in the studio."',
+                'review-2': '"The minimalist UI is a breath of fresh air. It gets out of the way and just lets the music take center stage."',
+                'review-3': '"Smart curation actually works. For the first time, a platform recommends indie bands I actually end up loving."',
+                'cta-heading': 'Ready to elevate your ears?',
+                'cta-copy': 'Join thousands of audiophiles. Try Premium free for 1 month. Cancel anytime.',
+                'cta-button': 'Get 1 Month Free',
+                'terms-copy': 'Terms and conditions apply.',
+                'footer-desc': 'The high-fidelity platform for those who live and breathe sound.',
+                'footer-product': 'Product',
+                'footer-product-link-1': 'Premium',
+                'footer-product-link-2': 'Spatial Audio',
+                'footer-product-link-3': 'Download App',
+                'footer-company': 'Company',
+                'footer-company-link-1': 'About Us',
+                'footer-company-link-2': 'Careers',
+                'footer-company-link-3': 'For Artists',
+                'footer-support': 'Support',
+                'footer-support-link-1': 'Help Center',
+                'footer-support-link-2': 'Terms of Service',
+                'footer-support-link-3': 'Privacy Policy'
+            },
+            ru: {
+                'nav-features': 'Функции',
+                'nav-about': 'О нас',
+                'nav-premium': 'Премиум',
+                'nav-reviews': 'Отзывы',
+                'btn-get-started': 'Начать',
+                'hero-heading-1': 'Погрузитесь в звук.',
+                'hero-heading-2': 'Без границ.',
+                'hero-copy': 'Почувствуйте студийное качество, персональные подборки и плавное воспроизведение на всех устройствах. Будущее прослушивания уже здесь.',
+                'btn-trial': 'Начать бесплатный пробный период',
+                'btn-demo': 'Прослушать демо',
+                'features-heading': 'Создано для аудиофилов.',
+                'features-copy': 'Мы проработали каждую деталь, чтобы обеспечить непревзойденный звук — от lossless-компрессии до интеллектуальных подборок.',
+                'feature-1-title': 'Качество без потерь',
+                'feature-1-copy': 'Потоковое аудио до 24 бит / 192 кГц. Слышны каждый вздох и каждая струна так, как задумал артист.',
+                'feature-2-title': 'Умные подборки',
+                'feature-2-copy': 'Наш ИИ анализирует привычки прослушивания и создает бесконечные миксы, идеально подходящие вашему настроению.',
+                'feature-3-title': 'Плавная синхронизация',
+                'feature-3-copy': 'Начните на телефоне, продолжите на компьютере. Идеальная синхронизация по всей экосистеме.',
+                'about-heading': 'Кураторство экспертов. Вдохновленные страстью.',
+                'about-copy': 'Мы создали Aura, потому что музыка не должна превращаться в безжизненные файлы. Мы сотрудничаем с артистами и звукорежиссерами, чтобы предложить платформу, уважающую искусство звука.',
+                'about-bullet-1': 'Система выплат артистам напрямую гарантирует справедливую компенсацию.',
+                'about-bullet-2': 'Эксклюзивные живые сессии и закулисный контент.',
+                'about-bullet-3': 'Никакой рекламы, даже в базовом пакете.',
+                'premium-heading': 'Преимущества Premium',
+                'premium-copy': 'Раскройте весь потенциал своей аудиосистемы.',
+                'premium-1-title': 'High-Res без потерь',
+                'premium-1-copy': 'Разрешение аудио до 24 бит / 192 кГц.',
+                'included': 'Включено',
+                'premium-2-title': 'Пространственное аудио',
+                'premium-2-copy': 'Погружающие 3D-звуковые ландшафты с Dolby Atmos.',
+                'premium-3-title': 'Оффлайн режим',
+                'premium-3-copy': 'Скачивайте всю библиотеку для прослушивания без интернета.',
+                'premium-4-title': 'Эксклюзивные подкасты',
+                'premium-4-copy': 'Доступ к авторским материалам без рекламы.',
+                'reviews-heading': 'Что о нас говорят',
+                'review-1': '«Я перепробовал все музыкальные приложения, но пространственное аудио Aura заставляет меня чувствовать себя будто я в студии.»',
+                'review-2': '«Минималистичный интерфейс — как глоток свежего воздуха. Он не мешает и позволяет музыке быть в центре.»',
+                'review-3': '«Умные подборки действительно работают. Впервые платформа рекомендует инди-группы, которые мне действительно нравятся.»',
+                'cta-heading': 'Готовы поднять звук на новый уровень?',
+                'cta-copy': 'Присоединяйтесь к тысячам аудиофилов. Попробуйте Premium бесплатно 1 месяц. Отмените в любой момент.',
+                'cta-button': 'Получить 1 месяц бесплатно',
+                'terms-copy': 'Применяются условия и положения.',
+                'footer-desc': 'Платформа высокой четкости для тех, кто живет и дышит звуком.',
+                'footer-product': 'Продукт',
+                'footer-product-link-1': 'Premium',
+                'footer-product-link-2': 'Пространственное аудио',
+                'footer-product-link-3': 'Скачать приложение',
+                'footer-company': 'Компания',
+                'footer-company-link-1': 'О нас',
+                'footer-company-link-2': 'Карьера',
+                'footer-company-link-3': 'Для артистов',
+                'footer-support': 'Поддержка',
+                'footer-support-link-1': 'Центр помощи',
+                'footer-support-link-2': 'Условия использования',
+                'footer-support-link-3': 'Политика конфиденциальности'
+            },
+            uz: {
+                'nav-features': 'Xususiyatlar',
+                'nav-about': 'Biz haqimizda',
+                'nav-premium': 'Premium',
+                'nav-reviews': 'Fikrlar',
+                'btn-get-started': 'Boshlash',
+                'hero-heading-1': 'Ovozga boting.',
+                'hero-heading-2': 'Chegaralarsiz.',
+                'hero-copy': 'Studiyaviy sifat, shaxsiy tavsiyalar va barcha qurilmalarda uzluksiz ijro. Tinglashning kelajagi shu yerda.',
+                'btn-trial': 'Bepul sinovni boshlang',
+                'btn-demo': 'Demonstroqni tinglang',
+                'features-heading': 'Audiophil uchun yaratilgan.',
+                'features-copy': 'Biz har bir detalni sinchkovlik bilan ishlab chiqdik, tabiiy sifatli tinglash tajribasini taqdim etish uchun.',
+                'feature-1-title': 'Yoʻqotishsiz sifat',
+                'feature-1-copy': '24 bit / 192 kGts gacha audio oqimini tinglang. Har bir nafas va chiziqni sanʼatkor xohlaganicha eshiting.',
+                'feature-2-title': 'Aqlli tanlovlar',
+                'feature-2-copy': 'AI tinglash odatlaringizni tahlil qiladi va hohishingizga mos keladigan cheksiz aralashmalar yaratadi.',
+                'feature-3-title': 'Muammosiz sinxronizatsiya',
+                'feature-3-copy': 'Telefoningizda boshlang, kompyuteringizda davom eting. Butun ekotizim bo‘ylab mukammal moslashuv.',
+                'about-heading': 'Mutaxassislar tomonidan tanlangan. Ehtirom bilan yaratilgan.',
+                'about-copy': 'Biz Aura ni yaratdik, chunki musiqa hayotiy bo‘lmagan fayllarga aylanishi kerak emas. Sanʼatkorlar va ovoz muhandislari bilan hamkorlik qilib, tovush sanʼatini hurmat qiladigan platformani taqdim etamiz.',
+                'about-bullet-1': 'Sanʼatkorlarga to‘g‘ridan-to‘g‘ri daromad modeli adolatli kompensatsiyani kafolatlaydi.',
+                'about-bullet-2': 'Eksklyuziv jonli sessiyalar va sahna orti kontenti.',
+                'about-bullet-3': 'Hatto asosiy tarifda ham reklama yo‘q.',
+                'premium-heading': 'Premium imtiyozlari',
+                'premium-copy': 'Ovoz tizimingizning to‘liq salohiyatini oching.',
+                'premium-1-title': 'High-Res yo‘qotishsiz',
+                'premium-1-copy': '24 bit / 192 kGts gacha audio aniqligi.',
+                'included': 'Kiritilgan',
+                'premium-2-title': 'Makonsal audio',
+                'premium-2-copy': 'Dolby Atmos bilan immersiv 3D tovush manzaralari.',
+                'premium-3-title': 'Offline rejim',
+                'premium-3-copy': 'Kutubxonangizni offline tinglash uchun yuklab oling.',
+                'premium-4-title': 'Eksklyuziv podkastlar',
+                'premium-4-copy': 'Reklamasiz yaratuvchi originaliga kirish.',
+                'reviews-heading': 'Ularning fikri',
+                'review-1': '«Men barcha musiqa ilovalarini sinab ko‘rdim, lekin Aura ning makonsal audiosi menga studiyada o‘tirgandek his qiladi.»',
+                'review-2': '«Minimalistik interfeys havo tomchisi kabi. U aralashmaydi va musiqa markazda bo‘lishiga imkon beradi.»',
+                'review-3': '«Aqlli tanlovlar aslida ishlaydi. Birinchi marta platforma menga haqiqatan ham yoqqan indie guruhlarini tavsiya qiladi.»',
+                'cta-heading': 'Eshitishingizni yangi darajaga ko‘tarmoqchimisiz?',
+                'cta-copy': 'Minglab audiophillar qatoriga qo‘shiling. Premium ni 1 oy bepul sinab ko‘ring. Istalgan vaqtda bekor qiling.',
+                'cta-button': '1 oy bepul oling',
+                'terms-copy': 'Shartlar va qoidalar amal qiladi.',
+                'footer-desc': 'Tovushni his qiladigan va nafas oladiganlar uchun yuqori aniqlikdagi platforma.',
+                'footer-product': 'Mahsulot',
+                'footer-product-link-1': 'Premium',
+                'footer-product-link-2': 'Makonsal audio',
+                'footer-product-link-3': 'Ilovani yuklab olish',
+                'footer-company': 'Kompaniya',
+                'footer-company-link-1': 'Biz haqimizda',
+                'footer-company-link-2': 'Karyera',
+                'footer-company-link-3': 'Sanʼatkorlar uchun',
+                'footer-support': 'Qo‘shtirish',
+                'footer-support-link-1': 'Yordam markazi',
+                'footer-support-link-2': 'Foydalanish shartlari',
+                'footer-support-link-3': 'Maxfiylik siyosati'
+            }
+        };
+
+        function translatePage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach((element) => {
+                const key = element.dataset.i18n;
+                element.textContent = translations[lang][key] || translations.en[key] || element.textContent;
+            });
+            document.documentElement.lang = lang;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const langSwitcher = document.getElementById('lang-switch');
+            translatePage(langSwitcher.value);
+            langSwitcher.addEventListener('change', (event) => translatePage(event.target.value));
+        });
+    </script>
+</body>
+
+</html>
