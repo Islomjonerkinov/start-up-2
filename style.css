@@ -61,6 +61,27 @@ nav ul a:hover {
     color: #fff;
 }
 
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 18px;
+    height: 2px;
+    border-radius: 10px;
+    background: #fff;
+}
+
 .nav-actions {
     display: flex;
     align-items: center;
@@ -417,7 +438,7 @@ nav ul a:hover {
     width: min(100%, 620px);
     min-height: 420px;
     border-radius: 36px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    background: url(https://www.apple.com/newsroom/images/product/services/standard/Apple-Music-100-million-songs-hero_big.jpg.large_2x.jpg) no-repeat center center/cover;
     border: 1px solid rgba(255, 255, 255, 0.14);
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
     overflow: hidden;
@@ -604,6 +625,31 @@ nav ul a:hover {
 @media (max-width: 960px) {
     nav {
         padding: 20px 24px;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .menu-toggle {
+        display: inline-flex;
+        margin-left: auto;
+        order: 2;
+    }
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px 0 6px;
+    }
+    nav.nav-open ul {
+        display: flex;
+    }
+    .n-btn {
+        display: none;
+    }
+    nav.nav-open .n-btn {
+        display: inline-flex;
+        order: 4;
     }
     .container {
         width: calc(100% - 32px);
@@ -636,10 +682,64 @@ nav ul a:hover {
     .p1 {
         font-size: 2.8rem;
     }
+    .h3 {
+        font-size: 2rem;
+    }
+    .p8 {
+        font-size: 0.9rem;
+    }
     .music {
         grid-template-columns: 44px 44px minmax(0, 1fr) auto;
+        gap: 12px;
+        padding: 14px;
+    }
+    .music-title {
+        font-size: 0.92rem;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+    .music-desc {
+        font-size: 0.82rem;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+    }
+    .music-status {
+        font-size: 0.8rem;
     }
     .music-more {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .musics {
+        padding: 12px;
+        gap: 10px;
+    }
+    .music {
+        grid-template-columns: 38px 38px minmax(0, 1fr);
+        gap: 10px;
+        padding: 12px;
+    }
+    .music-index {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        font-size: 0.82rem;
+    }
+    .music-badge {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+    }
+    .music-title {
+        font-size: 0.86rem;
+    }
+    .music-desc {
+        font-size: 0.78rem;
+        line-height: 1.35;
+    }
+    .music-status {
         display: none;
     }
 }
@@ -932,7 +1032,7 @@ footer {
 }
 
 .time {
-    width: 400px;
+    width: min(400px, 100%);
     height: 3px;
     background-color: white;
     border-radius: 2px;
@@ -942,6 +1042,8 @@ footer {
 .time-wrapper {
     padding-top: 10px;
     padding-left: 90px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .home {
@@ -1062,4 +1164,10 @@ footer {
 
 .checkbox:checked~.btn {
     right: 49%;
+}
+
+@media (max-width: 680px) {
+    .time-wrapper {
+        padding-left: 0;
+    }
 }

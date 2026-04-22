@@ -17,6 +17,11 @@
 <body>
     <nav>
         <h1><a href="#">Aura</a></h1>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul>
             <li><a href="#features" data-i18n="nav-features">Features</a></li>
             <li><a href="#about" data-i18n="nav-about">About</a></li>
@@ -185,6 +190,10 @@
 
             <div class="divs1">
                 <div class="reviews">
+                    <div class="profile">
+                        <p class="name">Sarah <span>jekins</span></p>
+                        <p class="who">Audio <span>Engineer</span></p>
+                    </div>
                     <div class="stars">
                         <i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star"
                             style="color: rgb(205, 223, 255);"></i>
@@ -194,13 +203,13 @@
                         makes me feel like
                         I'm sitting right in the studio."</i>
                     <div class="profile1">
-                        <div class="profile">
-                            <p class="name">Sarah <span>jekins</span></p>
-                            <p class="who">Audio <span>Engineer</span></p>
-                        </div>
                     </div>
                 </div>
                 <div class="reviews">
+                    <div class="profile">
+                        <p class="name">Sarah <span>jekins</span></p>
+                        <p class="who">Audio <span>Engineer</span></p>
+                    </div>
                     <div class="stars">
                         <i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star"
                             style="color: rgb(205, 223, 255);"></i>
@@ -209,12 +218,12 @@
                     <i class="review-text" data-i18n="review-2">"The minimalist UI is a breath of fresh air. It gets out of the way and just
                         lets the music take
                         center stage."</i>
+                </div>
+                <div class="reviews">
                     <div class="profile">
                         <p class="name">Sarah <span>jekins</span></p>
                         <p class="who">Audio <span>Engineer</span></p>
                     </div>
-                </div>
-                <div class="reviews">
                     <div class="stars">
                         <i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star" style="color: rgb(205, 223, 255);"></i><i class="fa-solid fa-star"
                             style="color: rgb(205, 223, 255);"></i>
@@ -222,10 +231,6 @@
                     </div>
                     <i class="review-text" data-i18n="review-3">"Smart curation actually works. For the first time, a platform recommends
                         indie bands I actually end up loving."</i>
-                    <div class="profile">
-                        <p class="name">Sarah <span>jekins</span></p>
-                        <p class="who">Audio <span>Engineer</span></p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -357,8 +362,7 @@
                 'nav-reviews': 'Fikrlar',
                 'btn-get-started': 'Boshlash',
                 'hero-heading-1': 'Ovozga boting.',
-                'hero-heading-2': 'Chegarala',
-                'hero-heading-2': 'rsiz.',
+                'hero-heading-2': "Chegarala'rsiz.",
                 'hero-copy': 'Studiyaviy sifat, shaxsiy tavsiyalar va barcha qurilmalarda uzluksiz ijro. Tinglashning kelajagi shu yerda.',
                 'btn-trial': 'Bepul sinovni boshlang',
                 'btn-demo': 'Demonstratsiyani tinglang',
@@ -423,6 +427,23 @@
 
         // Sahifa yuklanganda
         applyTranslation(currentLang);
+
+        const nav = document.querySelector("nav");
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelectorAll("nav ul a");
+
+        menuToggle.addEventListener("click", function() {
+            nav.classList.toggle("nav-open");
+            const isOpen = nav.classList.contains("nav-open");
+            this.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("nav-open");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
 
         document.querySelector(".checkbox").addEventListener("change", function() {
             currentLang = this.checked ? "en" : "uz";
