@@ -254,6 +254,21 @@ nav ul a:hover {
     color: #d6e0ff;
 }
 
+.heart-icon.clicked {
+    animation: click 0.5s ease-in-out;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .btns1 {
     display: flex;
     justify-content: center;
@@ -297,6 +312,7 @@ nav ul a:hover {
     place-items: center;
     color: #07070d;
     cursor: pointer;
+    background: transparent;
 }
 
 .section2,
