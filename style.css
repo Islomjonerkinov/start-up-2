@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
     color: #eef0fc;
     background: radial-gradient(circle at top left, rgba(100, 103, 255, 0.18), transparent 18%), radial-gradient(circle at bottom right, rgba(164, 13, 214, 0.12), transparent 16%), #07070d;
+    overflow-x: hidden;
 }
 
 .container {
@@ -273,10 +274,32 @@ nav ul a:hover {
 .heart-icon {
     font-size: 1.3rem;
     color: #d6e0ff;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+.check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.heart-icon.clicked {
+#check {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.heart-label {
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+}
+
+#check:checked + .heart-label .heart-icon {
     animation: click 0.5s ease-in-out;
+    color: #ff0000;
 }
 
 @keyframes click {
@@ -1032,7 +1055,7 @@ footer {
 }
 
 .time {
-    width: min(400px, 100%);
+    width: min(300px, 100%);
     height: 3px;
     background-color: white;
     border-radius: 2px;
@@ -1167,7 +1190,17 @@ footer {
 }
 
 @media (max-width: 680px) {
+    .info-row {
+        flex-wrap: wrap;
+    }
+    .check {
+        margin-left: auto;
+    }
     .time-wrapper {
         padding-left: 0;
+        width: 100%;
+    }
+    .time {
+        width: 100%;
     }
 }
