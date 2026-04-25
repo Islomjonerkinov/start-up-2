@@ -250,6 +250,20 @@
         </div>
     </section>
 
+    <!-- Premium Modal -->
+    <div class="premium-modal-overlay" id="premiumModal">
+        <div class="premium-modal">
+            <div class="modal-glow"></div>
+            <div class="modal-icon">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+            <h2 class="modal-title" data-i18n="modal-title">Tabriklaymiz! </h2>
+            <p class="modal-text" data-i18n="modal-text">Siz 1 oy <span class="modal-highlight">Premium</span> oldingiz!</p>
+            <p class="modal-subtext" data-i18n="modal-subtext">Endi barcha premium imkoniyatlardan foydalanishingiz mumkin. Yuqori sifatli musiqa, offline rejim va boshqa ko'plab afzalliklardan bahramand bo'ling!</p>
+            <button class="modal-close-btn" id="modalCloseBtn" data-i18n="modal-close-btn">Davom etish</button>
+        </div>
+    </div>
+
     <footer class="footer">
 
         <div class="footer-content">
@@ -358,7 +372,11 @@
                 'footer-support': 'Support',
                 'footer-support-link-1': 'Help Center',
                 'footer-support-link-2': 'Terms of Service',
-                'footer-support-link-3': 'Privacy Policy'
+                'footer-support-link-3': 'Privacy Policy',
+                'modal-title': 'Congratulations!',
+                'modal-text': 'You\'ve got 1 month of <span class="modal-highlight">Premium</span>!',
+                'modal-subtext': 'Now you can enjoy all premium features. High-quality music, offline mode, and many other benefits await you!',
+                'modal-close-btn': 'Continue'
             },
             uz: {
                 'nav-features': 'Xususiyatlar',
@@ -415,7 +433,72 @@
                 'footer-support': 'Qo\'llab-quvvatlash',
                 'footer-support-link-1': 'Yordam markazi',
                 'footer-support-link-2': 'Foydalanish shartlari',
-                'footer-support-link-3': 'Maxfiylik siyosati'
+                'footer-support-link-3': 'Maxfiylik siyosati',
+                'modal-title': 'Tabriklaymiz!',
+                'modal-text': 'Siz 1 oy <span class="modal-highlight">Premium</span> oldingiz!',
+                'modal-subtext': 'Endi barcha premium imkoniyatlardan foydalanishingiz mumkin. Yuqori sifatli musiqa, offline rejim va boshqa ko\'plab afzalliklardan bahramand bo\'ling!',
+                'modal-close-btn': 'Davom etish'
+            },
+            ru: {
+                'nav-features': 'Функции',
+                'nav-about': 'О нас',
+                'nav-premium': 'Премиум',
+                'nav-reviews': 'Отзывы',
+                'btn-get-started': 'Начать',
+                'hero-heading-1': 'Погрузитесь в звук.',
+                'hero-heading-2': 'Без границ.',
+                'hero-copy': 'Испытайте студийное качество, персональные рекомендации и бесшовное воспроизведение на всех ваших устройствах. Будущее прослушивания уже здесь.',
+                'btn-trial': 'Начать бесплатную пробную версию',
+                'btn-demo': 'Слушать демо',
+                'features-heading': 'Создано для аудиофилов.',
+                'features-copy': 'Мы продумали каждую деталь, чтобы обеспечить непревзойденное качество прослушивания, от сжатия без потерь до интеллектуального отбора.',
+                'feature-1-title': 'Качество без потерь',
+                'feature-1-copy': 'Слушайте аудио до 24 бит/192 кГц. Услышьте каждое дыхание, каждую струну именно так, как задумал автор.',
+                'feature-2-title': 'Умный отбор',
+                'feature-2-copy': 'Наш ИИ анализирует ваши привычки прослушивания, чтобы создавать бесконечные миксы, идеально соответствующие вашему настроению.',
+                'feature-3-title': 'Бесшовная синхронизация',
+                'feature-3-copy': 'Начните на телефоне, продолжите на компьютере. Идеальная синхронизация во всей вашей экосистеме.',
+                'about-heading': 'Отобрано экспертами. Движимо страстью.',
+                'about-copy': 'Мы создали Aura, потому что верим, что музыка не должна быть сжата в безжизненные файлы. Мы сотрудничаем напрямую с артистами и звукоинженерами.',
+                'about-bullet-1': 'Модель прямого дохода артистов обеспечивает справедливое вознаграждение.',
+                'about-bullet-2': 'Эксклюзивные живые сессии и закулисный контент.',
+                'about-bullet-3': 'Никакой рекламы даже на базовом уровне.',
+                'premium-heading': 'Преимущества Премиум',
+                'premium-copy': 'Раскройте весь потенциал вашей аудиосистемы.',
+                'premium-1-title': 'High-Res Lossless',
+                'premium-1-copy': 'Разрешение аудио до 24 бит/192 кГц.',
+                'included': 'Включено',
+                'premium-2-title': 'Пространственное аудио',
+                'premium-2-copy': 'Иммерсивные 3D-звуковые ландшафты с Dolby Atmos.',
+                'premium-3-title': 'Офлайн режим',
+                'premium-3-copy': 'Загрузите всю свою библиотеку для прослушивания офлайн.',
+                'premium-4-title': 'Эксклюзивные подкасты',
+                'premium-4-copy': 'Доступ без рекламы к оригиналам создателей.',
+                'reviews-heading': 'Что говорят слушатели',
+                'review-1': '«Я пробовал все музыкальные приложения, но пространственное аудио в Aura заставляет меня чувствовать себя как в студии.»',
+                'review-2': '«Минималистичный интерфейс — это глоток свежего воздуха. Он не мешает и позволяет музыке занять центральное место.»',
+                'review-3': '«Умный отбор действительно работает. Впервые платформа рекомендует инди-группы, которые мне действительно нравятся.»',
+                'cta-heading': 'Готовы улучшить свой слух?',
+                'cta-copy': 'Присоединяйтесь к тысячам аудиофилов. Попробуйте Премиум бесплатно в течение 1 месяца. Отмена в любое время.',
+                'cta-button': 'Получить 1 месяц бесплатно',
+                'terms-copy': 'Применяются условия и положения.',
+                'footer-desc': 'Платформа высокой четкости для тех, кто живет и дышит звуком.',
+                'footer-product': 'Продукт',
+                'footer-product-link-1': 'Премиум',
+                'footer-product-link-2': 'Пространственное аудио',
+                'footer-product-link-3': 'Скачать приложение',
+                'footer-company': 'Компания',
+                'footer-company-link-1': 'О нас',
+                'footer-company-link-2': 'Вакансии',
+                'footer-company-link-3': 'Для артистов',
+                'footer-support': 'Поддержка',
+                'footer-support-link-1': 'Справочный центр',
+                'footer-support-link-2': 'Условия обслуживания',
+                'footer-support-link-3': 'Политика конфиденциальности',
+                'modal-title': 'Поздравляем!',
+                'modal-text': 'Вы получили 1 месяц <span class="modal-highlight">Premium</span>!',
+                'modal-subtext': 'Теперь вы можете пользоваться всеми премиум-функциями. Вас ждут качественная музыка, офлайн-режим и многие другие преимущества!',
+                'modal-close-btn': 'Продолжить'
             }
         };
 
@@ -425,7 +508,7 @@
             document.querySelectorAll("[data-i18n]").forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 if (translations[lang][key]) {
-                    el.textContent = translations[lang][key];
+                    el.innerHTML = translations[lang][key];
                 }
             });
         }
@@ -453,6 +536,28 @@
         document.querySelector(".checkbox").addEventListener("change", function() {
             currentLang = this.checked ? "en" : "uz";
             applyTranslation(currentLang);
+        });
+
+        // Premium Modal
+        const premiumModal = document.getElementById("premiumModal");
+        const ctaBtn = document.querySelector(".cta-btn");
+        const modalCloseBtn = document.getElementById("modalCloseBtn");
+
+        ctaBtn.addEventListener("click", () => {
+            premiumModal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+
+        modalCloseBtn.addEventListener("click", () => {
+            premiumModal.classList.remove("active");
+            document.body.style.overflow = "";
+        });
+
+        premiumModal.addEventListener("click", (e) => {
+            if (e.target === premiumModal) {
+                premiumModal.classList.remove("active");
+                document.body.style.overflow = "";
+            }
         });
     </script>
 
