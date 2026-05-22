@@ -739,6 +739,7 @@ nav ul a:hover {
     .p6 {
         font-size: 14px;
     }
+
     .music {
         grid-template-columns: 44px 44px minmax(0, 1fr) auto;
         gap: 12px;
@@ -764,7 +765,7 @@ nav ul a:hover {
     .music-more {
         display: none;
     }
-    
+
     .container2 {
         padding: 30px 20px;
         min-height: auto;
@@ -825,6 +826,13 @@ nav ul a:hover {
     text-align: center;
     align-items: center;
     gap: 24px;
+}
+
+@media (max-width: 430px) {
+    .h4  {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
 }
 
 .reviews {
